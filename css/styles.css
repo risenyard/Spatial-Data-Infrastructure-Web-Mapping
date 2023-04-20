@@ -1,0 +1,54 @@
+.banner {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(71, 129, 247);
+    text-decoration: underline;
+  }
+
+a.active {
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+  }
+
+.title  {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+.title-text {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+  }
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+#map {
+    height: 700px;
+  }
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px; 
+    padding: 10px; 
+    background-color: #f5f5f5; 
+    color: #333; 
+  }
+  
+  
+  
+  
+  
