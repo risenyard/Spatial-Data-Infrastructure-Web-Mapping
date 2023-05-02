@@ -6,7 +6,7 @@
  var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
      maxZoom: 19,
      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
- });
+ })
  
  osm.addTo(map)
  // add layers
@@ -49,44 +49,14 @@ function defaultMapSettings() {
 
 //////////////////////STYLING////////////////////////////////
 
-// get color from feature property
-function getColor(property) {
-    switch (property) {
-    case 1:
-    return '#ff0000'
-    case 13:
-    return '#009933'
-    case 6:
-    return '#0000ff'
-    case 7:
-    return '#ff0066'
-    default:
-    return '#ffffff'
-    }
-   }
-
 // polygon style
 function polygonStyle(feature) {
     return {
-    fillColor: getColor(feature.properties.OBJECTID),
     fillOpacity: 0.5,
     weight: 1,
     opacity: 1,
     color: 'grey',
     }
-   }
-
-// point style
-function createCircle(feature, latlng) {
-    let options = {
-    radius: 5,
-    fillColor: 'red',
-    fillOpacity: 0.5,
-    color: 'red',
-    weight: 1,
-    opacity: 1,
-    }
-    return L.circleMarker(latlng, options)
    }
 
    
