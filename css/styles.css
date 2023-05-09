@@ -1,54 +1,79 @@
-.banner {
-    max-width: 100%;
-    height: auto;
-  }
-  
-.banner img {
-    width: 100%;
-    height: auto;
-  }
-  
+ .banner img {
+   width: 100%;
+   height: auto;
+   max-height: 300px;
+ }
 
-a{
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(71, 129, 247);
-    text-decoration: underline;
-  }
+ .header {
+   background-color: rgb(234, 235, 240);
+   text-align: start;
+   padding: 10px;
+   margin-left: 5%
+ }
 
-a.active {
-    color: rgb(4, 4, 4);
-    text-decoration: none;
-  }
+ .header a button {
+   font-size: 14px;
+   color: #000000;
+   border-width: 1px;
+   border-radius: 10px;
+   padding: 10px 30px;
+   cursor: pointer;
+   margin-right: 10px;
+ }
 
-.title  {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-.title-text {
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
-  }
+ .header a button:hover {
+   background-color: #2d7e9c;
+   color: #fff;
+   border: none;
+ }
 
-.container {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+ .header a.active button {
+   font-size: 14px;
+   color: #fff;
+   background-color: #2d7e9c;
+   border: none;
+   border-radius: 10px;
+   padding: 10px 30px;
+   cursor: default;
+   margin-right: 10px;
+ }
 
-#map {
-    height: 700px;
-  }
+ .title {
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
 
-footer {
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 50px; 
-    padding: 10px; 
-    background-color: #beb8b8; 
-    color: #333; 
-  }
-  
-  
-  
-  
-  
+ .title-text {
+   font-family: 'Times New Roman', Times, serif;
+   color: #333;
+ }
+
+ body {
+   background-color: rgb(234, 235, 235);
+ }
+
+
+ .container {
+   padding-left: 5%;
+   padding-right: 5%;
+
+ }
+
+ .container button{
+  cursor: pointer;
+  margin-left: 10px;
+ }
+
+ #map {
+   height: 700px;
+   border: #333;
+ }
+
+ footer {
+   font-family: 'Times New Roman', Times, serif;
+   margin-top: 50px;
+   padding: 10px;
+   background-color: #beb8b8;
+   color: #333;
+ }

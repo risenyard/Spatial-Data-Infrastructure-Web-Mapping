@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html>
 
- <head>
+<head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
-    <title>Web GIS</title>
- </head>
+    <title>Cell Tower in Tartu</title>
+</head>
 
- <body>
+<body>
     <div class="banner">
-        <img src="img/banner.jpg">
+        <img src="img/banner.png">
     </div>
 
     <div class="header">
-
         <nav>
-            <a href="index.html" class="active">Baics Map</a>
-            <a href="heatmap.html">Heatmap</a>
-            <a href="choroplethmap.html">Choropleth Map</a>
+            <a href="index.html" class="active"><button>Basic Map</button></a>
+            <a href="heatmap.html"><button>HeatMap</button></a>
+            <a href="choroplethmap.html"><button>Choropleth Map</button></a>
         </nav>
-
     </div>
 
     <div class="title">
-        <h1 class="title-text">Web GIS Application</h1>
+        <h1 class="title-text">Cell Tower in Tartu</h1>
     </div>
 
     <div class="container">
         <button onclick="defaultMapSettings()">Default</button>
-        <div id="map"></div>       
+        <div id="map"></div>
     </div>
-      
+
     <footer>
-     &copy; Senyang Li, University of Tartu, 2023
+        &copy; Senyang Li, University of Tartu, 2023
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    <script src="js/javascript.js"></script>  
- </body>
+    <script src="js/javascript.js"></script>
+</body>
 
 </html>
